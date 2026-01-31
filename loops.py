@@ -71,5 +71,78 @@ for a in str:
         break'''
 
 
+#find max. of list through for loop
+'''lst=[5,35,66,7,22,6,10]
+max=lst[0] #dont take max = 0 because if loop contains neg values then this will not work
+for a in lst:
+    if a>max:
+        max=a
+print(max,"is maximum")'''
 
+#given list count the no. of elements exactly divisble by 8
+'''lst=[100,160,168,720,400,161]
+count=0
+for a in lst:
+    if a%8==0:
+        count+=1
+print("total no. divisible by 8 in list is ",count)'''
+
+#write output of given code
+'''for x in range(1,10):
+    if x%2!=0:
+        print(x**3)'''
+#output:
+#1
+#27
+#125
+#343
+#729
+
+# pass logic is used to suspend the current task for sometime in loop(in both for and while)
+
+#loop with else
+#else block will be executed only if loop runs without hitting break
+#Code for searching for an element in a list by for loop
+'''num=[1,3,5,7,9,11,13]
+tar=int(input("Enter the num you want to find in the list :"))
+for a in num:
+    if a==tar:
+        print("found",tar,"at index",num.index(a))
+        break
+else:
+    print("not found in list")'''
+
+#code for searching for an element in a list by while loop
+'''num=[1,3,5,7,9,11,13]
+tar=int(input("Enter the num you want to find in the list :"))
+i=0
+while i<len(num):
+    if num[i]==tar:
+        print("found",tar,"at index",i)
+        break
+    i+=1
+else:
+    print("not found in list")'''
+
+#continue keyword is used with loop to skip a specific iteration sending signal back to starting point
+#used with both for and while
+#code to list all even numbers between a given user input range where starting and ending is included
+# by for loop and continue statement
+'''m=int(input("Enter starting point of your range : "))
+n=int(input("Enter end point of your range : "))
+for i in range(m,n+1):
+    if i%2!=0:
+        continue
+    print(i)'''
+##code to list all even numbers between a given user input range where starting and ending is included
+# by while loop and continue statement
+'''m=int(input("Enter starting point of your range : "))
+n=int(input("Enter end point of your range : "))
+i=m
+while i<n+1:
+    if i%2!=0:
+        i=i+1
+        continue
+    print(i)
+    i=i+1'''
 
